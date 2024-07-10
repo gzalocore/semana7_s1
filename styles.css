@@ -1,0 +1,61 @@
+.navigation {
+  color: red;
+}
+.navigation-item {
+  color: blue;
+}
+.navigation-item-link {
+  text-decoration: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background-color: #242424;
+  color: white;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background-color: blue;
+}
+
+section {
+  background-color: red;
+}
+
+ul {
+  color: red;
+}
+ul li {
+  color: blue;
+}
+ul li a {
+  text-decoration: none;
+}
+
+ul {
+  color: red;
+}
+ul li {
+  color: red;
+}
+ul li a {
+  text-decoration: none;
+}
+
+.navigation {
+  color: red;
+}
+.navigation .item {
+  color: blue;
+}
+.navigation .item .link {
+  text-decoration: none;
+}/*# sourceMappingURL=styles.css.map */
