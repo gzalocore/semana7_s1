@@ -19,7 +19,7 @@
 
     1. VARIABLES: SASS permite definir variables, lo cual facilita la gestión de colores, fuentes y otros valores reutilizables en todo el proyecto. Esto reduce la repetición y facilita la actualización de estilos globales.
 
-    ´´´ CSS
+    ``` CSS
     $primary-color: #3498db;
     $font-stack: Helvetica, sans-serif;
 
@@ -27,10 +27,11 @@
     color: $primary-color;
     font-family: $font-stack;
     }
-    ´´´
+    ```
 
     2. SCOPE: se refiere a la visibilidad y accesibilidad de variables. El SCOPE(alcance) en SASS es similar al scope en otros lenguajes de programación, determinando dónde se pueden usar ciertos identificadores dentro del código CSS.
-    ´´´ CSS
+
+    ``` CSS
     $global-color: blue;
 
     body {
@@ -42,11 +43,11 @@
         color: $local-color; // Uso de una variable local dentro del scope
       }
     }
-    ´´´
+    ```
 
     3. ANIDAMIENTO: El anidamiento de selectores en Sass mejora la legibilidad del código y refleja mejor la estructura HTML.
 
-    ´´´ CSS
+    ``` CSS
     nav {
         ul {
           margin: 0;
@@ -60,11 +61,11 @@
             color: $primary-color;
         }
     }
-    ´´´
+    ```
 
     4. AMPERSAND PADRE: El ampersand (&) en SASS es un símbolo que representa el selector padre en el contexto actual. Se utiliza para referirse al selector en el que se encuentra anidado, permitiendo una escritura más eficiente y clara de los estilos anidados y las pseudo-clases.
 
-    ´´´ CSS
+    ``` CSS
     ul{
         color: red;
         & li{
@@ -74,10 +75,10 @@
             color: red;
         }
     }
-    ´´´
+    ```
     5. IMPORT: SASS permite dividir el CSS en múltiples archivos parciales y luego importarlos en un solo archivo principal. Esto mejora la organización y mantenibilidad del código.
 
-    ´´´ CSS
+    ``` CSS
     // _reset.scss
     body { margin: 0; padding: 0; }
 
@@ -88,4 +89,4 @@
     @import 'layout';
     @import 'components';
 
-    ´´´    
+    ```
